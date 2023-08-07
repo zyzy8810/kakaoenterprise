@@ -1,0 +1,74 @@
+/* 공통요소 */
+.blind{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0,0,0,0);
+  overflow: hidden;
+  margin-left: -1px;
+}
+
+.inner1{
+  width: 1500px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inner2{
+  max-width: 1244px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.inner3{
+  max-width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  max-width: inherit;
+  margin: 0 200px;
+}
+
+h2.title{
+  font-size: 52px;
+  line-height: 1.26;
+  font-weight: 600;
+}
+
+.cont-list.grid{
+  
+}
+.sc-main .control-area .autoplay::after,
+.sc-main .control-area .autoplay.on::after{
+background-image: url(../images/is-btn.png);
+background-size: 33px 11px;
+background-repeat: no-repeat;
+}
+
+
+.line{position: relative;}
+.line::after{
+  content: '';
+  position: absolute;
+  left: 0;width: 100%;
+  bottom: 0;
+  height: 1px;
+  background: #000;
+  transform: scale(0);
+  transition: transform 0.3s;
+  transform-origin: right;
+}
+.line:hover::after{
+  transform: scale(1);
+  transform-origin: left;
+}
+
+
+/* .grid-item { width: 50%; }
+.grid-item--width2 { width: 50%; } */

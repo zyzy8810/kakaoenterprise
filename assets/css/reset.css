@@ -1,0 +1,51 @@
+/* .sc-service marquee */
+:root {
+  --color-text: navy;
+  /* --color-bg: papayawhip;
+  --color-bg-accent: #ecdcc0; */
+  --size: clamp(10rem, 1rem + 40vmin, 30rem);
+  --gap: calc(var(--size) / 14);
+  --duration: 60s;
+  --scroll-start: 0;
+  --scroll-end: calc(-100% - var(--gap));
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-text: papayawhip;
+    --color-bg: navy;
+    --color-bg-accent: #2626a0;
+  }
+}
+*{margin:0;padding:0;font:inherit;color:inherit;}
+*, :after, :before {box-sizing:border-box;flex-shrink:0;}
+:root {-webkit-tap-highlight-color:transparent;-webkit-text-size-adjust:100%;text-size-adjust:100%;cursor:default;line-height:1.5;overflow-wrap:break-word;-moz-tab-size:4;tab-size:4}
+html, body {height:100%;}
+img, picture, video, canvas, svg {display: block;max-width:100%;}
+button {background:none;border:0;cursor:pointer;}
+a {text-decoration:none}
+table {border-collapse:collapse;border-spacing:0}
+fieldset{border: 0;}
+/* 추가 */
+ul{
+  list-style: none;
+}
+
+/* 초기세팅 */
+
+body{
+  overflow-x: hidden;
+    overflow-y: scroll;
+    font-family: 'KakaoBig', sans-serif;
+    /* font-size: 16rem; */
+    word-break: keep-all;
+    color: #191919;
+}
+
+:root{
+  --font-en:'gilroy', 'KakaoBig', sans-serif;
+}
+
+::selection {
+  background: rgba(255,238,51,0.99);
+  color: #191919;
+}
