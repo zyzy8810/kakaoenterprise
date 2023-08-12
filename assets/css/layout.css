@@ -12,13 +12,17 @@
   left: 0;
   background: transparent;
   border-bottom-color: transparent;
-  width: 100%;
   line-height: 1;
   text-align: center;
   z-index: 5;
   color: #fff;
   transition: background 0.3s;
 }
+
+.header .inner1{
+  padding: 0 80px;
+}
+
 
 /* fixed 위로 올라가기 */
 .header.fix {
@@ -29,9 +33,6 @@
   border-bottom: 1px solid #ddd;
 }
 
-.header .logo {}
-
-.header .logo a {}
 
 .header.fix .logo path {
   fill: #000;

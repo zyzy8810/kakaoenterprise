@@ -9,7 +9,7 @@
 }
 
 .inner1{
-  width: 1500px;
+  max-width: 1500px;
   height: 100%;
   margin: 0 auto;
   position: relative;
