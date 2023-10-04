@@ -154,14 +154,6 @@
 
 
 .sc-service {
-  /* display: grid;
-  align-content: center;
-  overflow: hidden;
-  gap: var(--gap);
-  width: 100%;
-  min-height: 100vh;
-  font-size: 1px;
-  line-height: 1.5; */
 }
 .sc-service .inner2{
   max-width: 1244px;
